@@ -24,7 +24,6 @@ metadata:
     k8s.io/display-name: Node.js 10
     maintainer: SoftwareCollections.org <sclorg@redhat.com>
     name: kabanero/nodejs-express
-    namespace: production
     openshift.io/expose-services: 8080:http
     openshift.io/tags: builder,nodejs,nodejs10
     redhat.com/build-host: cpt-1008.osbs.prod.upshift.rdu2.redhat.com
@@ -60,7 +59,7 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.2.10
   name: theapp
-  namespace: adminproj
+  namespace: production
 spec:
   applicationImage: docker-registry.default.svc:5000/adminproj/theapp
   createKnativeService: false

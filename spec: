@@ -1,29 +1,20 @@
 apiVersion: appsody.dev/v1beta1
 kind: AppsodyApplication
 metadata:
-  namespace: production
   annotations:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2020-01-30T08:16:17.662981
-    commit.image.appsody.dev/author: phthom <phthom@yahoo.fr>
-    commit.image.appsody.dev/committer: phthom <phthom@yahoo.fr>
-    commit.image.appsody.dev/date: Thu Mar 5 23:13:41 2020 +0100
-    commit.image.appsody.dev/message: Production Change 5
     commit.stack.appsody.dev/author: Steve Groeger <groeges@uk.ibm.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
-    commit.stack.appsody.dev/date: Tue Mar 10 21:35:36 2020 +0000
-    commit.stack.appsody.dev/message: 'Merge pull request #313 from groeges/release-0.6'
+    commit.stack.appsody.dev/date: Thu Feb 27 18:17:28 2020 +0000
+    commit.stack.appsody.dev/message: 'Merge pull request #305 from groeges/release-0.6'
     description: This image contains the Kabanero development stack for the Nodejs
       Express collection
     distribution-scope: public
     help: For more information visit https://github.com/sclorg/s2i-nodejs-container
-    image.opencontainers.org/created: "2020-03-12T22:04:05+01:00"
-    image.opencontainers.org/documentation: https://github.com/phthom/theapp
-    image.opencontainers.org/revision: 3931899f133b29c76e1c1524f12ae13b95fd6e27-modified
-    image.opencontainers.org/source: https://github.com/phthom/theapp/tree/master
-    image.opencontainers.org/url: https://github.com/phthom/theapp
+    image.opencontainers.org/created: "2020-02-29T14:10:11+01:00"
     k8s.io/description: Node.js 10 available as container is a base platform for building
       and running various Node.js 10 applications and frameworks. Node.js is a platform
       built on Chrome's JavaScript runtime for easily building fast, scalable network
@@ -46,11 +37,11 @@ metadata:
     s2i.openshift.io/scripts-url: image:///usr/libexec/s2i
     stack.appsody.dev/authors: Chris Bailey <cnbailey@gmail.com>, Neeraj Laad <neeraj.laad@gmail.com>
     stack.appsody.dev/configured: docker.io/kabanero/nodejs-express:0.2
-    stack.appsody.dev/created: "2020-03-10T21:45:40Z"
+    stack.appsody.dev/created: "2020-02-28T15:25:18Z"
     stack.appsody.dev/description: Express web framework for Node.js
     stack.appsody.dev/documentation: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/README.md
     stack.appsody.dev/licenses: Apache-2.0
-    stack.appsody.dev/revision: 5f7634c970b880bef90eeea4288153249e172d61
+    stack.appsody.dev/revision: fde002c0cbbe17c3306e54b62c64b16d948f4586
     stack.appsody.dev/source: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/image
     stack.appsody.dev/tag: docker.io/kabanero/nodejs-express:0.2.10
     stack.appsody.dev/title: Node.js Express
@@ -68,8 +59,9 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.2.10
   name: theapp
+  namespace: production
 spec:
-  applicationImage: dev.local/theapp
+  applicationImage: docker-registry.default.svc:5000/adminproj/theapp
   createKnativeService: false
   expose: true
   livenessProbe:

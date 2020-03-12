@@ -8,8 +8,8 @@ metadata:
     build-date: 2020-01-30T08:16:17.662981
     commit.image.appsody.dev/author: phthom <phthom@yahoo.fr>
     commit.image.appsody.dev/committer: phthom <phthom@yahoo.fr>
-    commit.image.appsody.dev/date: Thu Mar 5 23:13:41 2020 +0100
-    commit.image.appsody.dev/message: Production Change 5
+    commit.image.appsody.dev/date: Thu Mar 12 22:34:22 2020 +0100
+    commit.image.appsody.dev/message: test change 101
     commit.stack.appsody.dev/author: Steve Groeger <groeges@uk.ibm.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
@@ -19,9 +19,9 @@ metadata:
       Express collection
     distribution-scope: public
     help: For more information visit https://github.com/sclorg/s2i-nodejs-container
-    image.opencontainers.org/created: "2020-03-12T22:04:05+01:00"
+    image.opencontainers.org/created: "2020-03-12T22:44:50+01:00"
     image.opencontainers.org/documentation: https://github.com/phthom/theapp
-    image.opencontainers.org/revision: 3931899f133b29c76e1c1524f12ae13b95fd6e27-modified
+    image.opencontainers.org/revision: a67f754d0c1663353ff420d73dcd519f6395672c
     image.opencontainers.org/source: https://github.com/phthom/theapp/tree/master
     image.opencontainers.org/url: https://github.com/phthom/theapp
     k8s.io/description: Node.js 10 available as container is a base platform for building
@@ -68,6 +68,7 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.2.10
   name: theapp
+  namespace: production
 spec:
   applicationImage: dev.local/theapp
   createKnativeService: false
